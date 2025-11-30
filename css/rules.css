@@ -1,0 +1,91 @@
+/* 协议排版相关样式 */
+
+body {
+  background-color: #fff;
+  line-height: 1.35;
+  padding: .20rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: .22rem;
+  margin: 0 0 .15rem 0;
+  text-align: center;
+  /* padding-top: .15rem; */
+}
+
+strong {
+  font-size: .15rem;
+}
+
+p,
+li {
+  margin: .11rem 0;
+}
+
+section {
+  /* padding-top: .20rem; */
+}
+
+.important {
+  border: 1px solid #333;
+  padding: 0 .11rem;
+  margin: .11rem 0;
+  background-color: #eee;
+}
+
+.model {
+  border: 1px solid #333;
+  padding: 0 .11rem;
+  margin: .11rem 0;
+  background-color: #f2f2f2;
+}
+
+.model h1 {
+  font-size: .16rem;
+  text-align: center;
+  margin: 0 0 .1rem 0;
+  padding-top: .1rem;
+}
+
+ul.list {
+  list-style: unset;
+  padding-left: .4rem;
+}
+
+ul.list>li {
+  list-style: unset;
+}
+
+.table-scroll-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.agreement-content {
+  /* display: none; */
+}
+
+.unmarked {
+  list-style: none;
+}
+
+ol.custom-lower-roman {
+  list-style-type: none;
+  counter-reset: listCounter;
+}
+
+ol.custom-lower-roman li::before {
+  margin-right: 8px;
+  display: inline-block;
+  counter-increment: listCounter;
+  content: "("counter(listCounter, lower-roman) ")";
+}
